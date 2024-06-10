@@ -141,7 +141,7 @@ void charToCode(char c, uint8_t * code, uint8_t * modifier)
         case ';'  : *code = HID_KEY_SEMICOLON;                                           return;
         case '.'  : *code = HID_KEY_PERIOD;                                              return;
         case ':'  : *code = HID_KEY_SEMICOLON;  *modifier = KEYBOARD_MODIFIER_LEFTSHIFT; return;
-        case '-'  : *code = HID_KEY_MINUS;                                               return;
+        case '-'  : *code = HID_KEY_KEYPAD_SUBTRACT;                                     return;
         case '_'  : *code = HID_KEY_MINUS;      *modifier = KEYBOARD_MODIFIER_LEFTSHIFT; return;
         case '='  : *code = HID_KEY_EQUAL;                                               return;
         case '+'  : *code = HID_KEY_EQUAL;      *modifier = KEYBOARD_MODIFIER_LEFTSHIFT; return;

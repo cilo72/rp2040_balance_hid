@@ -15,13 +15,13 @@
 #include <string.h>
 
 /*
- 1 : UART0 TX/I2C0 SDA/SPI0  RX/GP00   -> UART TX
- 2 : UART0 RX/I2C0 SCL/SPI0  CS/GP01   <- UART RX
+ 1 : UART0 TX/I2C0 SDA/SPI0  RX/GP00
+ 2 : UART0 RX/I2C0 SCL/SPI0  CS/GP01
  3 :                             GND
  4 :          I2C1 SDA/SPI0 SCK/GP02
  5 :          I2C1 SCL/SPI0  TX/GP03
- 6 : UART1 TX/I2C0 SDA/SPI0  RX/GP04
- 7 : UART1 RX/I2C0 SCL/SPI0  CS/GP05
+ 6 : UART1 TX/I2C0 SDA/SPI0  RX/GP04   -> UART TX
+ 7 : UART1 RX/I2C0 SCL/SPI0  CS/GP05   <- UART RX
  8 :                             GND
  9 :          I2C1 SDA/SPI0 SCK/GP06
 10 :          I2C1 SCL/SPI0  TX/GP07
@@ -58,8 +58,8 @@
 40 :                            VBUS
 */
 
-static constexpr uint8_t PIN_UART_TX = 0;
-static constexpr uint8_t PIN_UART_RX = 1;
+static constexpr uint8_t PIN_UART_TX   = 4;
+static constexpr uint8_t PIN_UART_RX   = 5;
 
 static constexpr uint8_t PIN_KEY_TAB   = 13;
 static constexpr uint8_t PIN_KEY_ENTER = 14;

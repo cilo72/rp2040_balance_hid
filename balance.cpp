@@ -30,7 +30,7 @@ bool Balance::weightValueImmediately(char * weight)
 uint32_t Balance::command(const char *command, const char *response, uint32_t timeout)
 {
     static constexpr int RETRIES = 2;
-    bool again = false;
+    bool again = true;
 
     for (int i = 0; i < RETRIES and again; i++)
     {
